@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirubaaharan J S | Technical Lead / System Analyst</title>
+  <style>
+    :root {
+      --bg-main: #020617;
+      --bg-card: #0f172a;
+      --accent: #38bdf8; /* arc-reactor blue */
+      --accent-soft: #0ea5e9;
+      --text-main: #e5e7eb;
+      --text-muted: #94a3b8;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top, #020617 20%, #000000 80%);
+      color: var(--text-main);
+    }
+
+    header {
+      padding: 100px 60px 80px;
+      background: linear-gradient(180deg, #020617 0%, #020617ee),
+                  url('images/stark_elevation.svg') no-repeat top center;
+      background-size: contain;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 40px;
+      align-items: center;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    h1 {
+      font-size: 46px;
+      margin: 0 0 12px 0;
+      letter-spacing: 0.5px;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-top: 60px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      line-height: 1.8;
+      color: var(--text-muted);
+      max-width: 900px;
+    }
+
+    section {
+      padding: 40px 60px;
+    }
+
+    .profile-img {
+      width: 280px;
+      height: 280px;
+      border-radius: 18px;
+      background: linear-gradient(145deg, #020617, #0f172a);
+      box-shadow: 0 0 0 1px #1e293b, 0 0 40px #38bdf833;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .tag {
+      display: inline-block;
+      background: #020617;
+      padding: 8px 14px;
+      margin: 8px 8px 0 0;
+      border-radius: 20px;
+      font-size: 13px;
+      border: 1px solid #1e293b;
+      box-shadow: inset 0 0 10px #38bdf811;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #020617, #0b1220);
+      padding: 28px;
+      border-radius: 20px;
+      margin-top: 30px;
+      box-shadow: 0 0 0 1px #1e293b, 0 0 30px #020617;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .project-card {
+      background: radial-gradient(circle at top, #020617, #000000);
+      padding: 24px;
+      border-radius: 18px;
+      border: 1px solid #1e293b;
+      box-shadow: 0 0 20px #38bdf822;
+    }
+
+    .project-card h3 {
+      color: var(--accent-soft);
+      margin-top: 0;
+    }
+
+    footer {
+      padding: 50px;
+      text-align: center;
+      color: var(--text-muted);
+      border-top: 1px solid #1e293b;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .glow-line {
+      width: 120px;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      margin: 20px 0;
+    }
+
+  
+    /* ===== BACKGROUND VISUAL LAYERS ===== */
+    .bg-grid {
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(56,189,248,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56,189,248,0.06) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .bg-circuit {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at 70% 20%, rgba(56,189,248,0.12), transparent 40%),
+                  radial-gradient(circle at 20% 80%, rgba(14,165,233,0.10), transparent 45%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .bg-arm {
+      position: fixed;
+      right: -120px;
+      bottom: -60px;
+      width: 520px;
+      height: 520px;
+      background: url('images/robotic_arm.svg') no-repeat center / contain;
+      opacity: 0.25;
+      filter: drop-shadow(0 0 30px rgba(56,189,248,0.35));
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header, section, footer { position: relative; z-index: 1; }
+
+  </style>
+</head>
+<body>
+<!-- Background Layers -->
+<div class="bg-grid"></div>
+<div class="bg-circuit"></div>
+<div class="bg-arm"></div>
+
+<header>
+  <!-- Stark-style abstract elevation background (original, non-IP) -->
+  <div>
+    <h1>Kirubaaharan J S</h1>
+    <p><strong>Technical Lead – System Validation & Automation</strong></p>
+    <div class="glow-line"></div>
+    <p>
+      Automotive systems engineer with 7+ years of experience building and validating
+      ADAS platforms across OEM and Tier-1 ecosystems. Specialized in system thinking,
+      automation, safety-critical software, and cross-continental collaboration.
+    </p>
+  </div>
+
+  <div class="profile-img">
+    Your Image Here<br/>(replace with &lt;img&gt;)
+  </div>
+</header>
+
+<section>
+  <h2>Core Domains</h2>
+  <div>
+    <span class="tag">ADAS L1–L3</span>
+    <span class="tag">System Analysis</span>
+    <span class="tag">HIL / SIL</span>
+    <span class="tag">Test Automation</span>
+    <span class="tag">AI Tooling</span>
+    <span class="tag">ISO 26262</span>
+    <span class="tag">ASPICE</span>
+    <span class="tag">CI/CD</span>
+  </div>
+</section>
+
+<section>
+  <h2>Professional Experience</h2>
+
+  <div class="card">
+    <h3>Senior Software Engineer / Technical Lead – ADAS</h3>
+    <p><strong>Embitel Technologies – Volkswagen Group</strong></p>
+    <p>
+      Leading system validation and automation initiatives for SWE5/SWE6 ADAS platforms.
+      Driving AI-assisted tooling, regression strategies, and cross-team technical alignment
+      with European OEM stakeholders.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Senior Engineer – System Testing</h3>
+    <p><strong>Bosch Global Software Technologies (Mercedes-Benz)</strong></p>
+    <p>
+      Validated Level-2 and Level-3 ADAS systems across German, European, and Chinese markets.
+      Designed HIL setups, authored system test specifications, and ensured compliance
+      with global safety standards.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Selected Projects</h2>
+
+  <div class="projects">
+    <div class="project-card">
+      <h3>Level-3 ADAS – China Market</h3>
+      <p>System validation and automation for advanced highway autonomy features
+      under region-specific constraints.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Level-2 ADAS – Europe</h3>
+      <p>End-to-end validation of driver assistance functions aligned with
+      German and EU regulatory requirements.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>AI-driven Test Automation</h3>
+      <p>Designed intelligent automation frameworks to reduce regression effort
+      and improve system reliability.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>BCM & Telematics Systems</h3>
+      <p>System engineering and validation for safety, connectivity,
+      and vehicle control ECUs.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Philosophy</h2>
+  <p>
+    I approach engineering the way high-performance systems are built:
+    understand the architecture, respect constraints, automate relentlessly,
+    and design for resilience. My focus is always on long-term system integrity
+    over short-term fixes.
+  </p>
+</section>
+
+<footer>
+  <p>Germany · Japan · United States | Open to relocation</p>
+  <p>
+    <a href="#">Download ATS Resume</a> ·
+    <a href="#">LinkedIn</a> ·
+    <a href="#">GitHub</a>
+  </p>
+</footer>
+
+</body>
+</html>
